@@ -4,18 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider</title>
+    <title>Slide Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 <body>
-    <h1>Images Slider</h1>
-    <div class="slider">
-        <img src="./images/img1.jpg" alt="">
-        <img src="./images/img2.jpg" alt="">
-        <img src="./images/img3.jpg" alt="">
-        <img src="./images/img4.jpg" alt="">
-        <img src="./images/img5.jpg" alt="">
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <div class="carouselImg">
+                <img src="./images/img1.jpg" class="lastClone" alt="">
+                <div class="imgDetails">
+                    <h2>Nature</h2>
+                    <p>Nature having wonderfull Thing</p>
+                </div>
+            </div>
+            <div class="carouselImg">
+                <img src="./images/img2.jpg" alt="1">
+                            <div class="imgDetails">
+                                <h2>Nature</h2>
+                                <p>Nature having wonderfull Thing</p>
+                            </div>
+               
+            </div>
+            <div class="carouselImg">
+                <img src="./images/img3.jpg" alt="1">
+                            <div class="imgDetails">
+                                <h2>Nature</h2>
+                                <p>Nature having wonderfull Thing</p>
+                            </div>
+            </div>
+            <div class="carouselImg">
+                <img src="./images/img4.jpg" alt="1">
+                            <div class="imgDetails">
+                                <h2>Animals</h2>
+                                <p>Nature having wonderfull Thing</p>
+                            </div>
+            </div>
+            <div class="carouselImg">
+                <img src="./images/img5.jpg" alt="1">
+                            <div class="imgDetails">
+                                <h2>Animals</h2>
+                                <p>Nature having wonderfull Thing</p>
+                            </div>
+            </div>
+            <div class="carouselImg">
+                <img src="./images/img1.jpg" class="firstClone" alt="1">
+                            <div class="imgDetails">
+                                <h2>Nature</h2>
+                                <p>Nature having wonderfull Thing</p>
+                            </div>
+            </div>
+        </div>
+        <div class="container">
+            <button id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+            <button id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+        </div>
     </div>
-    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
