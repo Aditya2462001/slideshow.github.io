@@ -19,7 +19,7 @@ careouselSlide.style.transform=`translateX(-${size * count }px)`;
 //button 
 nextBtn.addEventListener("click",() =>
 {
-
+    if (count >= careouselImg.length-1) return ;
     careouselSlide.style.transition = 'transform 0.4s ease-in-out';
     count++ ;
     careouselSlide.style.transform = `translateX(-${size * count}px)`;
@@ -28,9 +28,9 @@ nextBtn.addEventListener("click",() =>
 
 prevBtn.addEventListener("click",() =>
 {
+    if (count <=0) return;
     careouselSlide.style.transition = 'transform 0.4s ease-in-out';
     count-- ;
-    console.log('count :', count );
     careouselSlide.style.transform = `translateX(-${size * count}px)`;
 
 });
@@ -46,7 +46,6 @@ careouselSlide.addEventListener("transitionend",() =>
     }
     else if (count == careouselImg.length - 1)
     {
-        console.log("hello world");
         careouselSlide.style.transition = 'none';
         count = 0;
         careouselSlide.style.transform = `translateX(-${size * count}px)`;
